@@ -50,9 +50,7 @@ public class GuitarSpec {
             return false;
         if (numStrings != otherSpec.numStrings)
             return false;
-        if (backWood != otherSpec.backWood)
-            return false;
-        return topWood == otherSpec.topWood;
+        return backWood == otherSpec.backWood && topWood == otherSpec.topWood;
     }
 
     private boolean isSpecified() {
